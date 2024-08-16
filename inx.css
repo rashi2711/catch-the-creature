@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}
+.screen{
+    height: 100%;
+    width: 100%;
+background-color: #FFCC00;
+background-position: center;
+background-size: 100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-out 0.6s;
+}
+.screen h1{
+    font-family: DRAGON HUNTER;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.screen button{
+padding: 18px 35px;
+font-size: 20px;
+background-color: transparent;
+
+
+border: 2px solid #E8D8C4;
+color: #0075BE;
+transition: all ease 0.1s;
+cursor: pointer;
+}
+.screen button:active{
+    scale: 0.95;
+}
+.screen button:hover{
+    background-color:#0075BE ;
+    color:#FFCC00;
+}
+.screen h2{
+    font-size: 60px;
+    text-align: center;
+}
+.elem-container{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.elem{
+    border: 2px solid #E8D8C4;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    cursor: grab;
+    transition: all ease 0.3s;
+}
+.elem:hover{
+background-color:#0075BE ;
+}
+
+.elem img{
+    height: 100PX;
+}
+.elem:hover h4{
+    color: #FFCC00;
+    transition: all ease 0.3s;
+}
+.elem:active{
+    cursor: grabbing;
+}
+
+
+.time-score{
+    width: 100%;
+    padding: 25px 45px;
+    /* height: 100%; */
+    display: flex;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+}
+.time-score h4{
+    font-size: 22px;
+
+}
+.time-score h5{
+    font-size: 22px;
+}
+.playground{
+    height: 95%;
+    width: 100%;
+    position: relative;
+}
+
+.playground img{
+    height: 100px;
+    position:absolute;
+}
+.screen:nth-child(1) h4{
+    position: absolute;
+    top: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #000000e7;
+    color:rgb(0, 119, 255) ;
+    width: 100%;
+    padding: 30px;
+    font-size: 25px;
+   opacity: 0;
+   z-index: 9999;
+}
