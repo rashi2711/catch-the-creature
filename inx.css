@@ -83,9 +83,9 @@ background-color:#0075BE ;
 .time-score{
     width: 100%;
     padding: 25px 45px;
-    /* height: 100%; */
+
     display: flex;
-    /* background-color: antiquewhite; */
+   
     align-items: center;
     border-bottom: 2px solid white;
     justify-content: space-between;
